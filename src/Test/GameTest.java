@@ -1,6 +1,7 @@
-package com.denmats.guess_number_game;
+package Test;
 
 
+import com.denmats.guess_number_game.Game;
 import org.junit.Before;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -24,7 +25,7 @@ class GameTest {
         game = new Game(1,100);
     }*/
 
-    @Test
+   /* @Test
     public void playGameTest(){
         game = new Game(1,100);
 
@@ -81,5 +82,5 @@ class GameTest {
     public void checkIfTheNumberGeneratedIsEqualToMaxValueFromTheRange(){
         Game game = new Game(100,100);
         assertEquals(100,game.secretNumber);
-    }
+    }*/
 }
