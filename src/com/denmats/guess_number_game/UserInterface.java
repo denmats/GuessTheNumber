@@ -10,7 +10,7 @@ public class UserInterface {
         return validateUserInput(scanner.next());
     }
 
-    protected static int validateUserInput(String input) throws MyCustomException {
+    public static int validateUserInput(String input) throws MyCustomException {
         int guess;
         try {
             guess = Integer.parseInt(input);

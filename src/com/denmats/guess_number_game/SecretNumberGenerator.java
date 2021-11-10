@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class SecretNumberGenerator {
 
-    protected static int getRandomNumberFromTheGivenRange(int min, int max) {
+    public static int getRandomNumberFromTheGivenRange(int min, int max) {
         if (min > max) {
             int temp = max;
             max = min;

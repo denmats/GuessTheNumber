@@ -4,19 +4,23 @@ public class Main {
 
     public static void main(String[] args) throws MyCustomException {
 
-        int secret = SecretNumberGenerator.getRandomNumberFromTheGivenRange(1,100);
+        final int secret = SecretNumberGenerator.getRandomNumberFromTheGivenRange(1,100);
         boolean isGame = true;
-
-        System.out.println("Secret is "+secret);
 
         while (isGame) {
             int guess = UserInterface.makeAGuess();
-            Game game = new Game(guess, secret);
-            System.out.println(game.playGame());
-            if(game.getGuess() == game.getSecret()){
-                System.out.println("The secret number was "+ secret);
-                isGame = false;
-            }
+
+            System.out.println(new Game(guess, secret).playGame());
+            isGame = checkIfTheGameIsOver(guess, secret);
         }
+    }
+
+    private static boolean checkIfTheGameIsOver(int secret, int guess) {
+        boolean isGame = true;
+        if(guess == secret){
+            System.out.println("The secret number was "+ secret);
+            isGame = false;
+        }
+        return isGame;
     }
 }
