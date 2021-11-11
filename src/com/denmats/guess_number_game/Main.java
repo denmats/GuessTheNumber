@@ -15,7 +15,7 @@ public class Main {
         }
     }
 
-    private static boolean checkIfTheGameIsOver(int secret, int guess) {
+    protected static boolean checkIfTheGameIsOver(int secret, int guess) {
         boolean isGame = true;
         if(guess == secret){
             System.out.println("The secret number was "+ secret);

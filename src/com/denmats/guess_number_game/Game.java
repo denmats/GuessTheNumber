@@ -10,7 +10,7 @@ public class Game {
         this.guess = guess;
     }
 
-    public Feedback playGame(){
+    protected Feedback playGame(){
         Feedback feedback = Feedback.THE_GAME_IS_OVER;
 
         if(this.guess > this.secret){

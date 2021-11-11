@@ -2,7 +2,7 @@ package com.denmats.guess_number_game;
 
 import java.util.Scanner;
 
-public class UserInterface {
+class UserInterface {
     private static final Scanner scanner = new Scanner(System.in);
 
     public static int makeAGuess() throws MyCustomException {
@@ -10,7 +10,7 @@ public class UserInterface {
         return validateUserInput(scanner.next());
     }
 
-    public static int validateUserInput(String input) throws MyCustomException {
+    protected static int validateUserInput(String input) throws MyCustomException {
         int guess;
         try {
             guess = Integer.parseInt(input);

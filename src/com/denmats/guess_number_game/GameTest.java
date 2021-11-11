@@ -1,8 +1,5 @@
-package Test;
+package com.denmats.guess_number_game;
 
-
-import com.denmats.guess_number_game.Feedback;
-import com.denmats.guess_number_game.Game;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -29,6 +26,4 @@ class GameTest {
         game = new Game(2,4);
         assertEquals(Feedback.TOO_LOW,game.playGame());
     }
-
-
 }

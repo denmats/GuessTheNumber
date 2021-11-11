@@ -1,6 +1,5 @@
-package Test;
+package com.denmats.guess_number_game;
 
-import com.denmats.guess_number_game.SecretNumberGenerator;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

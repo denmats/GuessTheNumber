@@ -1,7 +1,6 @@
-package Test;
+package com.denmats.guess_number_game;
 
-import com.denmats.guess_number_game.MyCustomException;
-import com.denmats.guess_number_game.UserInterface;
+import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 

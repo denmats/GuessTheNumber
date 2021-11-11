@@ -2,9 +2,9 @@ package com.denmats.guess_number_game;
 
 import java.util.Random;
 
-public class SecretNumberGenerator {
+class SecretNumberGenerator {
 
-    public static int getRandomNumberFromTheGivenRange(int min, int max) {
+    protected static int getRandomNumberFromTheGivenRange(int min, int max) {
         if (min > max) {
             int temp = max;
             max = min;
