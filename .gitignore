@@ -1,2 +1,4 @@
 # Project exclude paths
 /out/
+!.gitignore
+!GuessTheNumber_flowchart_CRC.pdf
